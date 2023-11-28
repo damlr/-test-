@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>jeux</title>
+    <script type="text/javascript">
+        
+        let blackjack = 21;
+        let pioche = Math.floor(Math.random(1 - 15) * math.random ());
+        
+        
+
+
+        function joueur() {           
+             let nombreClient = document.getElementById("nombre").value;
+             
+                    
+             if (blackjack < nombreClient){
+                alert ("Vous avez perdu");
+                } else{
+                    while (21){
+                        pioche += Math.floor(Math.random()*16);
+                        console.log(pioche);
+                        break;
+                        alert("encore ?")
+                        }
+                        
+                            
+                    }
+                    alert ("Vous avez gagné");
+                    let scorejoueur = pioche +;
+                    let scorebanque = Math.floor(Math.random()*27); 
+                    ;
+             
+       consolejoueur.log(pioche) }
+            function banque(){
+                
+            }
+                    
+       </script>
+    </script>
+</head>
+<body>
+    <form name="jeux">
+        <h1>Faites vos jeux !</h1>
+        <table>
+            <tr>
+                <td>
+                    valeur joueur
+                </td>
+                <td id="consolejoueur">
+                        
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="button" value="continuer" onclick="joueur()">
+        <input type="button" value="stop" onclick="banque()">
+
+    </form>
+    <div id="scorejoueur"></div>
+    <div id="scorebanque"></div>
+
+</body>
+</html>
